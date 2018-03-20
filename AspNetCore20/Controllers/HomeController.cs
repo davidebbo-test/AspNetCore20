@@ -24,7 +24,7 @@ namespace AspNetCore20.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = MyClassLibrary.Hello.SayHello("David");
 
             return View();
         }
